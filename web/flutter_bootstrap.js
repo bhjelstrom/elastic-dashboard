@@ -271,6 +271,7 @@
   }
   _flutter.buildConfig = {
     engineRevision: "cf56914b326edb0ccb123ffdc60f00060bd513fa",
+    useLocalCanvasKit: true,
     builds: [
         { compileTarget: "dart2wasm", renderer: "skwasm", mainWasmPath: "main.dart.wasm", jsSupportRuntimePath: "main.dart.mjs" },
         { compileTarget: "dart2js", renderer: "canvaskit", mainJsPath: "main.dart.js" },
