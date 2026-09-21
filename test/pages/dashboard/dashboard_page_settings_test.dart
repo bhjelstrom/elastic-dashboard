@@ -86,12 +86,12 @@ void main() {
 
         expect(preferences.getString(PrefKeys.ipAddress), '10.3.53.2');
       });
-      test('SystemCore Wifi', () async {
+      test('Systemcore Wifi', () async {
         await dashboardModel.changeIPAddressMode(IPAddressMode.systemCoreAP);
 
         expect(preferences.getString(PrefKeys.ipAddress), '172.30.0.1');
       });
-      test('SystemCore mDNS', () async {
+      test('Systemcore mDNS', () async {
         await dashboardModel.changeIPAddressMode(IPAddressMode.systemCoremDNS);
 
         expect(preferences.getString(PrefKeys.ipAddress), 'robot.local');
