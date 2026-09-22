@@ -13,7 +13,7 @@ typedef SubscriptionIdentification = ({
 
 enum NTServerTarget {
   robotCode('Robot Code', 5810),
-  systemCore('Systemcore Internal', 6810);
+  systemCore('SystemCore Internal', 6810);
 
   const NTServerTarget(this.name, this.port);
 

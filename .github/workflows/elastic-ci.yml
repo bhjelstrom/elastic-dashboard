@@ -258,17 +258,17 @@ jobs:
           path: build/web
           if-no-files-found: error
 
-      - name: Create Systemcore installer
+      - name: Create SystemCore installer
         working-directory: .github/ipk_build
         run: |
           ./build.sh
-          mv elastic_dashboard_*.ipk Elastic-Systemcore.ipk
+          mv elastic_dashboard_*.ipk Elastic-SystemCore.ipk
 
-      - name: Upload Systemcore installer
+      - name: Upload SystemCore installer
         uses: actions/upload-artifact@v7
         with:
           archive: false
-          path: .github/ipk_build/Elastic-Systemcore.ipk
+          path: .github/ipk_build/Elastic-SystemCore.ipk
           if-no-files-found: error
 
   github-pages:

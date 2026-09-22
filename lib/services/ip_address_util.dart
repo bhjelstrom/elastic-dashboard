@@ -4,8 +4,8 @@ import 'dart:typed_data';
 enum IPAddressMode {
   driverStation('Driver Station', 0),
   teamNumber('Team Number (10.TE.AM.2)', 1),
-  systemCoremDNS('Systemcore mDNS', 2),
-  systemCoreAP('Systemcore Wifi', 5),
+  systemCoremDNS('SystemCore mDNS', 2),
+  systemCoreAP('SystemCore Wifi', 5),
   localhost('localhost (127.0.0.1)', 3),
   custom('Custom', 4);
 

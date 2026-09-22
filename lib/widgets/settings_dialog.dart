@@ -470,10 +470,10 @@ class _SettingsDialogState extends State<SettingsDialog> {
         Tooltip(
           waitDuration: const Duration(milliseconds: 100),
           message: '''
-There are 2 Network Tables servers on the Systemcore:
+There are 2 Network Tables servers on the SystemCore:
 
 Robot Code - The Network Tables server displaying data from the robot code.
-Systemcore Internal - The Network Tables server displaying internal data from the Systemcore (RAM, CPU, etc).''',
+SystemCore Internal - The Network Tables server displaying internal data from the SystemCore (RAM, CPU, etc).''',
           child: Icon(Icons.help_outline),
         ),
         const SizedBox(width: 5),

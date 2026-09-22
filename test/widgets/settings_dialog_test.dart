@@ -319,19 +319,19 @@ void main() {
     await widgetTester.tap(ntServerMode);
     await widgetTester.pumpAndSettle();
 
-    expect(find.text('Systemcore Internal'), findsOneWidget);
+    expect(find.text('SystemCore Internal'), findsOneWidget);
 
-    await widgetTester.tap(find.text('Systemcore Internal'));
+    await widgetTester.tap(find.text('SystemCore Internal'));
     await widgetTester.pumpAndSettle();
 
     expect(find.text('Robot Code'), findsNothing);
-    expect(find.text('Systemcore Internal'), findsOneWidget);
+    expect(find.text('SystemCore Internal'), findsOneWidget);
     expect(
       preferences.getInt(PrefKeys.ntTargetServer),
       NTServerTarget.systemCore.index,
     );
 
-    await widgetTester.tap(find.text('Systemcore Internal'));
+    await widgetTester.tap(find.text('SystemCore Internal'));
     await widgetTester.pumpAndSettle();
 
     expect(find.text('Robot Code'), findsOneWidget);
